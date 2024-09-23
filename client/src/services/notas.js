@@ -3,7 +3,7 @@ import axios from 'axios'
 const backend = 'http://localhost:3000/notas'
 
 export const getNotas =async()=>
-    await axios.get("http://localhost:3000/notas")
+    await axios.get(backend)
 
 export const getNota =async(id)=>
     await axios.get(`${backend}/${id}`)
